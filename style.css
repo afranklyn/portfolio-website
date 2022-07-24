@@ -20,8 +20,17 @@ Fonts:
     
 }
 
+[class*="grid"] {
+    margin: 0;
+    
+}
+
 img {
     max-width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 
@@ -116,7 +125,7 @@ img {
 
 
 .bg-image {
-    background-image: url(images/the-sleep-co-dark-bed.jpg);
+    
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgb(240,240,240);
@@ -143,13 +152,15 @@ img {
 /*------------------ TYPOGRAPHY STYLES ----------------- */
 
 body {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
     color:#272624;
 }
 
 h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
     line-height: 1.1;
+    letter-spacing: -0.01em;
 }
 
 h2 { font-size: 2.5rem;}
@@ -157,7 +168,7 @@ h3 { font-size: 1.5rem;}
 h4 { font-size: 1.2rem;}
 
 p {
-    font-weight: 200;
+    font-weight: 100;
     line-height: 1.5;
     margin-bottom: 1rem;
 }
@@ -256,6 +267,9 @@ a:hover {
 
 /*------------------ HEADER AND FOOTER STYLES-------------- */
 
+header {
+    padding: 2% 5%;
+}
 
 header a {
     color: inherit;
@@ -263,20 +277,19 @@ header a {
     /* border: 1px solid grey; */
     display: inline-block;
     border-bottom: none;
-    padding: 0.4rem;
+    
 }
 
 nav a {
     display: inline-block;
+    padding: 0.25rem;
 }
 
-header {
-    padding: 2% 5%;
-}
 
-.logo h2 {
+.logo {
     font-weight: 800;
-    margin-bottom: 0;
+    font-size: 2rem;
+    /* margin-bottom: 0; */
 }
 
 
@@ -284,13 +297,18 @@ footer a {
     border:none;
 }
 
+footer a:hover {
+    color: #d5b6a3;
+    
+}
+
 /*------------------ BANNER STYLES ------------------------*/
 
-.banner {
+/* .banner {
     background-image: url(images/the-sleep-co-white.jpg);
     background-size: cover;
     background-position: center;
-}
+} */
 
 /* .banner h3 {
     font-size: 5.5rem;
@@ -311,16 +329,15 @@ footer a {
     background-image: url(images/plant-2.jpg);
     background-position: 50% 50%;
 }
-.bg-image-dog {
-    background-image: url(images/the-sleep-co-dog.jpg);
-    background-position: 50% 35%;
-} 
 
 
 
 
 
-/*---------------------- ICON SECTION  ---------------------------*/
+
+
+/*---------------------- ICONS  ---------------------------*/
+/* Custom Icons */
 
 .icon-section img {
     max-width: 3rem;
@@ -328,7 +345,30 @@ footer a {
     margin: 1rem 0;
 }
 
+/* Font Awesome */
+
+.fab {
+   padding: 0.2rem; 
+   font-size: 1.2rem;
+}
+
 /*---------------------- BUTTONS AND FORMS ---------------------------*/
+
+.button {
+    text-decoration: none;
+    border-bottom: none;
+    border: 2px solid;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+}
+
+.bg-featured .button:hover {
+    color:#d5b6a3;
+}
+
+
+
+
 
 input,
 textarea {
@@ -349,13 +389,14 @@ textarea:focus {
     outline: none;
 }
 
-.button {
+
+.button-form {
     padding: 0.5rem 2rem;
     background-color: #a3755c;
     appearance: none;
     /* appearnace none removes 3d old school button look */
     color: inherit;
-    border: 2px solid #192837;
+    border: 2px solid white;
     /* use border with same color as background so you can see border when hover active */
 }
 
@@ -390,6 +431,10 @@ textarea:focus {
   .show-md {display: block;}
   .hide-md {display: none;}
 
+  .md-text-center   { text-align: center; }
+  .md-text-left     { text-align: left; }
+  .md-text-right    { text-align: right; }
+
   .md-tall-80 {min-height: 80vh;}
 }
 
@@ -421,6 +466,8 @@ textarea:focus {
   .sm-margin-b-0    { margin-bottom: 0; }
   .sm-margin-l-0    { margin-left: 0; }
   .sm-margin-r-0    { margin-right: 0; }
+
+  .flex-flip-sm { flex-direction: column-reverse; }
 
   .bg-image-plant       {
     background-image: url(images/plant-light.png);

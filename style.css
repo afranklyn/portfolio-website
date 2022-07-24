@@ -302,28 +302,31 @@ footer a {
 /* ---------- BACKGROUND IMAGES  ---------- */
 
 
-/* .bg-image-bed       {background-image: url(images/the-sleep-co-dark-bed.jpg);}
-.bg-image-pillow    {
-    background-image: url(images/the-sleep-co-yellow.jpg);
+.bg-image-plant       {
+    background-image: url(images/plant.jpg);
+    background-position: 50% 35%;
+}
+
+.bg-image-vase    {
+    background-image: url(images/plant-2.jpg);
     background-position: 50% 50%;
 }
 .bg-image-dog {
     background-image: url(images/the-sleep-co-dog.jpg);
     background-position: 50% 35%;
-} */
+} 
 
 
 
 
 
-/*---------------------- FONT AWESOME ICONS  ---------------------------*/
+/*---------------------- ICON SECTION  ---------------------------*/
 
-/* .fa-solid {
-    display: block;
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 3rem;
-} */
+.icon-section img {
+    max-width: 3rem;
+    opacity: 0.8;
+    margin: 1rem 0;
+}
 
 /*---------------------- BUTTONS AND FORMS ---------------------------*/
 
@@ -418,6 +421,16 @@ textarea:focus {
   .sm-margin-b-0    { margin-bottom: 0; }
   .sm-margin-l-0    { margin-left: 0; }
   .sm-margin-r-0    { margin-right: 0; }
+
+  .bg-image-plant       {
+    background-image: url(images/plant-light.png);
+    background-position: 50% 35%;
+}
+
+.bg-image-vase    {
+    background-image: url(images/plant-2-light.png);
+    background-position: 50% 50%;
+}
 
 /*   .logo h2          {font-size: 2rem;}
 
